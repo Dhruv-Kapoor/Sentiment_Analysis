@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView android:layout_height="match_parent"-->
+<!--    android:layout_width="match_parent"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android" >-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomReviewsActivity">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Enter review:"-->
+    <!--        android:textSize="14sp"-->
+    <!--        android:textColor="@android:color/black"/>-->
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/black_stroke_transparent_fill"
+        android:gravity="top"
+        android:hint="Enter your review"
+        android:minLines="10"
+        android:maxLines="10"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAnalyze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etText"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_gradient_50"
+        android:enabled="false"
+        android:text="Analyze"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/brightGreen"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="Positive"
+        tools:visibility="visible"/>
+</RelativeLayout><!--</ScrollView>-->
